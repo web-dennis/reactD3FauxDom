@@ -1,0 +1,166 @@
+.rendered-d3 {
+  position: absolute;
+  top: 100px; left: 0; right: 0; bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.rendered-d3 .svg-container {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+.rendered-d3 .controls {
+  display: flex;
+  width: 100%;
+  max-width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 40px;
+  box-sizing: border-box;
+}
+.rendered-d3 .controls .title {
+  font-size: 25px;
+}
+.rendered-d3 .controls .budget-control {
+  display: flex;
+}
+.rendered-d3 .controls .budget-control .budget-input {
+  outline: none;
+  padding: 10px;
+  font-size: 15px;
+  width: 80px;
+  border: none;
+  border-radius: 5px;
+  box-sizing: border-box;
+  line-height: 20px;
+  text-align: center;
+}
+.rendered-d3 .controls .budget-control .update-budget {
+  margin-left: 10px;
+  font-size: 15px;
+  background-color: #bcb8b8;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.rendered-d3 .controls .budget-control .update-budget:hover {
+  background-color: #cdc9c9;
+}
+.bar {
+  opacity: 0.75;
+  vector-effect: none;
+  fill: #af365e;
+  fill-opacity: 1;
+  ry: 10;
+  stroke: none;
+  stroke-width: 0.41478083;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+}
+.bar:hover {
+  fill: brown;
+}
+.axis--x,
+.axis--y {
+  stroke: #ffffff;
+  stroke-width: 0.5;
+}
+.axis--x line,
+.axis--y line {
+  display: none;
+}
+.axis--x path,
+.axis--y path {
+  stroke: #9cabb6;
+  stroke-width: 0.5;
+}
+.ruler-line {
+  stroke: #ffffff;
+  stroke-width: 0.5;
+}
+.axis-x-text {
+  fill: #ffffff;
+}
+.bezier-curve {
+  display: inline;
+  fill: none;
+  stroke: #af365e;
+  stroke-width: 3;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+.circle {
+  display: inline;
+  opacity: 1;
+  fill: #af365e;
+  fill-opacity: 1;
+  fill-rule: nonzero;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linejoin: round;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+  r: 7;
+  transition: fill 0.5s, r 0.5s;
+  cursor: pointer;
+}
+.circle:hover {
+  fill: #eede26;
+  r: 10;
+}
+.control-line {
+  display: inline;
+  fill: none;
+  stroke: #eede26;
+  stroke-width: 1;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+}
+.zoom-vertical,
+.zoom-horizontal {
+  display: inline;
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 2;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-opacity: 1;
+}
+.zoom-circle {
+  opacity: 1;
+  vector-effect: none;
+  fill: #000000;
+  fill-opacity: 1;
+  stroke: #ffffff;
+  stroke-width: 4;
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: none;
+  stroke-dashoffset: 0;
+  stroke-opacity: 1;
+  r: 5;
+  cursor: pointer;
+  transition: fill 0.5s, r 0.5s;
+}
+.zoom-circle:hover {
+  r: 7;
+}
